@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		384B03922A97A072002C0EAA /* ruswarlossesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384B03912A97A072002C0EAA /* ruswarlossesApp.swift */; };
+		384B03942A97A072002C0EAA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384B03932A97A072002C0EAA /* ContentView.swift */; };
+		384B03962A97A075002C0EAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 384B03952A97A075002C0EAA /* Assets.xcassets */; };
+		384B039A2A97A075002C0EAA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 384B03992A97A075002C0EAA /* Preview Assets.xcassets */; };
+		384B03A42A97A076002C0EAA /* ruswarlossesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384B03A32A97A076002C0EAA /* ruswarlossesTests.swift */; };
+		384B03AE2A97A076002C0EAA /* ruswarlossesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384B03AD2A97A076002C0EAA /* ruswarlossesUITests.swift */; };
+		384B03B02A97A076002C0EAA /* ruswarlossesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384B03AF2A97A076002C0EAA /* ruswarlossesUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		384B03A02A97A076002C0EAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 384B03862A97A072002C0EAA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 384B038D2A97A072002C0EAA;
+			remoteInfo = ruswarlosses;
+		};
+		384B03AA2A97A076002C0EAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 384B03862A97A072002C0EAA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 384B038D2A97A072002C0EAA;
+			remoteInfo = ruswarlosses;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		384B038E2A97A072002C0EAA /* ruswarlosses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ruswarlosses.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		384B03912A97A072002C0EAA /* ruswarlossesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ruswarlossesApp.swift; sourceTree = "<group>"; };
+		384B03932A97A072002C0EAA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		384B03952A97A075002C0EAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		384B03972A97A075002C0EAA /* ruswarlosses.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ruswarlosses.entitlements; sourceTree = "<group>"; };
+		384B03992A97A075002C0EAA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		384B039F2A97A076002C0EAA /* ruswarlossesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ruswarlossesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		384B03A32A97A076002C0EAA /* ruswarlossesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ruswarlossesTests.swift; sourceTree = "<group>"; };
+		384B03A92A97A076002C0EAA /* ruswarlossesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ruswarlossesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		384B03AD2A97A076002C0EAA /* ruswarlossesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ruswarlossesUITests.swift; sourceTree = "<group>"; };
+		384B03AF2A97A076002C0EAA /* ruswarlossesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ruswarlossesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		384B038B2A97A072002C0EAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		384B039C2A97A076002C0EAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		384B03A62A97A076002C0EAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		384B03852A97A072002C0EAA = {
+			isa = PBXGroup;
+			children = (
+				384B03902A97A072002C0EAA /* ruswarlosses */,
+				384B03A22A97A076002C0EAA /* ruswarlossesTests */,
+				384B03AC2A97A076002C0EAA /* ruswarlossesUITests */,
+				384B038F2A97A072002C0EAA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		384B038F2A97A072002C0EAA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				384B038E2A97A072002C0EAA /* ruswarlosses.app */,
+				384B039F2A97A076002C0EAA /* ruswarlossesTests.xctest */,
+				384B03A92A97A076002C0EAA /* ruswarlossesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		384B03902A97A072002C0EAA /* ruswarlosses */ = {
+			isa = PBXGroup;
+			children = (
+				384B03912A97A072002C0EAA /* ruswarlossesApp.swift */,
+				384B03932A97A072002C0EAA /* ContentView.swift */,
+				384B03952A97A075002C0EAA /* Assets.xcassets */,
+				384B03972A97A075002C0EAA /* ruswarlosses.entitlements */,
+				384B03982A97A075002C0EAA /* Preview Content */,
+			);
+			path = ruswarlosses;
+			sourceTree = "<group>";
+		};
+		384B03982A97A075002C0EAA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				384B03992A97A075002C0EAA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		384B03A22A97A076002C0EAA /* ruswarlossesTests */ = {
+			isa = PBXGroup;
+			children = (
+				384B03A32A97A076002C0EAA /* ruswarlossesTests.swift */,
+			);
+			path = ruswarlossesTests;
+			sourceTree = "<group>";
+		};
+		384B03AC2A97A076002C0EAA /* ruswarlossesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				384B03AD2A97A076002C0EAA /* ruswarlossesUITests.swift */,
+				384B03AF2A97A076002C0EAA /* ruswarlossesUITestsLaunchTests.swift */,
+			);
+			path = ruswarlossesUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		384B038D2A97A072002C0EAA /* ruswarlosses */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 384B03B32A97A076002C0EAA /* Build configuration list for PBXNativeTarget "ruswarlosses" */;
+			buildPhases = (
+				384B038A2A97A072002C0EAA /* Sources */,
+				384B038B2A97A072002C0EAA /* Frameworks */,
+				384B038C2A97A072002C0EAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ruswarlosses;
+			productName = ruswarlosses;
+			productReference = 384B038E2A97A072002C0EAA /* ruswarlosses.app */;
+			productType = "com.apple.product-type.application";
+		};
+		384B039E2A97A076002C0EAA /* ruswarlossesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 384B03B62A97A076002C0EAA /* Build configuration list for PBXNativeTarget "ruswarlossesTests" */;
+			buildPhases = (
+				384B039B2A97A076002C0EAA /* Sources */,
+				384B039C2A97A076002C0EAA /* Frameworks */,
+				384B039D2A97A076002C0EAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				384B03A12A97A076002C0EAA /* PBXTargetDependency */,
+			);
+			name = ruswarlossesTests;
+			productName = ruswarlossesTests;
+			productReference = 384B039F2A97A076002C0EAA /* ruswarlossesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		384B03A82A97A076002C0EAA /* ruswarlossesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 384B03B92A97A076002C0EAA /* Build configuration list for PBXNativeTarget "ruswarlossesUITests" */;
+			buildPhases = (
+				384B03A52A97A076002C0EAA /* Sources */,
+				384B03A62A97A076002C0EAA /* Frameworks */,
+				384B03A72A97A076002C0EAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				384B03AB2A97A076002C0EAA /* PBXTargetDependency */,
+			);
+			name = ruswarlossesUITests;
+			productName = ruswarlossesUITests;
+			productReference = 384B03A92A97A076002C0EAA /* ruswarlossesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		384B03862A97A072002C0EAA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					384B038D2A97A072002C0EAA = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					384B039E2A97A076002C0EAA = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 384B038D2A97A072002C0EAA;
+					};
+					384B03A82A97A076002C0EAA = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 384B038D2A97A072002C0EAA;
+					};
+				};
+			};
+			buildConfigurationList = 384B03892A97A072002C0EAA /* Build configuration list for PBXProject "ruswarlosses" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 384B03852A97A072002C0EAA;
+			productRefGroup = 384B038F2A97A072002C0EAA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				384B038D2A97A072002C0EAA /* ruswarlosses */,
+				384B039E2A97A076002C0EAA /* ruswarlossesTests */,
+				384B03A82A97A076002C0EAA /* ruswarlossesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		384B038C2A97A072002C0EAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				384B039A2A97A075002C0EAA /* Preview Assets.xcassets in Resources */,
+				384B03962A97A075002C0EAA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		384B039D2A97A076002C0EAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		384B03A72A97A076002C0EAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		384B038A2A97A072002C0EAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				384B03942A97A072002C0EAA /* ContentView.swift in Sources */,
+				384B03922A97A072002C0EAA /* ruswarlossesApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		384B039B2A97A076002C0EAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				384B03A42A97A076002C0EAA /* ruswarlossesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		384B03A52A97A076002C0EAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				384B03AE2A97A076002C0EAA /* ruswarlossesUITests.swift in Sources */,
+				384B03B02A97A076002C0EAA /* ruswarlossesUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		384B03A12A97A076002C0EAA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 384B038D2A97A072002C0EAA /* ruswarlosses */;
+			targetProxy = 384B03A02A97A076002C0EAA /* PBXContainerItemProxy */;
+		};
+		384B03AB2A97A076002C0EAA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 384B038D2A97A072002C0EAA /* ruswarlosses */;
+			targetProxy = 384B03AA2A97A076002C0EAA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		384B03B12A97A076002C0EAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		384B03B22A97A076002C0EAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		384B03B42A97A076002C0EAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ruswarlosses/ruswarlosses.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ruswarlosses/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = vesp.ruswarlosses;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		384B03B52A97A076002C0EAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ruswarlosses/ruswarlosses.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ruswarlosses/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = vesp.ruswarlosses;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		384B03B72A97A076002C0EAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = vesp.ruswarlossesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ruswarlosses.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ruswarlosses";
+			};
+			name = Debug;
+		};
+		384B03B82A97A076002C0EAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = vesp.ruswarlossesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ruswarlosses.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ruswarlosses";
+			};
+			name = Release;
+		};
+		384B03BA2A97A076002C0EAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = vesp.ruswarlossesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ruswarlosses;
+			};
+			name = Debug;
+		};
+		384B03BB2A97A076002C0EAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = vesp.ruswarlossesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ruswarlosses;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		384B03892A97A072002C0EAA /* Build configuration list for PBXProject "ruswarlosses" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				384B03B12A97A076002C0EAA /* Debug */,
+				384B03B22A97A076002C0EAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		384B03B32A97A076002C0EAA /* Build configuration list for PBXNativeTarget "ruswarlosses" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				384B03B42A97A076002C0EAA /* Debug */,
+				384B03B52A97A076002C0EAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		384B03B62A97A076002C0EAA /* Build configuration list for PBXNativeTarget "ruswarlossesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				384B03B72A97A076002C0EAA /* Debug */,
+				384B03B82A97A076002C0EAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		384B03B92A97A076002C0EAA /* Build configuration list for PBXNativeTarget "ruswarlossesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				384B03BA2A97A076002C0EAA /* Debug */,
+				384B03BB2A97A076002C0EAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 384B03862A97A072002C0EAA /* Project object */;
+}
