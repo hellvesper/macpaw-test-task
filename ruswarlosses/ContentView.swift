@@ -65,6 +65,21 @@ struct StatisticsData: Codable, Identifiable {
     }
 }
 
+//let keyPaths: [KeyPath<StatisticsData, Int>] = [
+//    \.day,
+//    \.aircraft,
+//    \.helicopter,
+//     \.tank,
+//     \.APC,
+//     \.field_artillery,
+//     \.MRL,
+//     \.military_auto,
+//     \.fuel_tank,
+//     \.drone,
+//     \.naval_ship,
+//     \.antiaircraft_warfare
+//]
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
@@ -77,9 +92,9 @@ struct ContentView: View {
     @State private var selectedChartType: ChartType = .bar
     
     enum ChartType {
-            case bar
-            case line
-        }
+        case bar
+        case line
+    }
     
     var body: some View {
         VStack {
@@ -103,7 +118,7 @@ struct ContentView: View {
                         .frame(height: 300)
                         .padding()
                 } else if selectedChartType == .line {
-                    LineChart(data: statisticsData, fieldKey: \.tank)
+                    LineChart(data: statisticsData, fieldKeys: [\.tank, \.APC, \.field_artillery])
                         .frame(height: 300)
                         .padding()
                 }
@@ -216,20 +231,27 @@ struct BarChart: View {
 
 struct LineChart: View {
     let data: [StatisticsData]
-    let fieldKey: KeyPath<StatisticsData, Int>
+//    let fieldKey: KeyPath<StatisticsData, Int>
+    let fieldKeys: [KeyPath<StatisticsData, Int>]
+    
+    static var color: [Color] = [.blue, .cyan, .green, .indigo, .mint, .orange, .pink, .purple, .red, .teal, .yellow, .gray]
     
     var body: some View {
         ZStack {
-            drawLineChart()
+            ForEach(fieldKeys, id: \.self) { keyPath in
+                drawLineChart(fk: keyPath)
+            }
+//            drawLineChart(fk: fieldKey)
+//            drawLineChart(fk: fieldKey)
         }
     }
     
-    private func drawLineChart() -> some View {
+    private func drawLineChart(fk: KeyPath<StatisticsData, Int>) -> some View {
         GeometryReader { geometry in
             Path { path in
                 for (index, entry) in data.enumerated() {
                     let x = geometry.size.width / CGFloat(data.count - 1) * CGFloat(index)
-                    let y = geometry.size.height - self.getY(entry: entry, geometry: geometry)
+                    let y = geometry.size.height - self.getY(entry: entry, geometry: geometry, fk: fk)
                     if index == 0 {
                         path.move(to: CGPoint(x: x, y: y))
                     } else {
@@ -237,13 +259,23 @@ struct LineChart: View {
                     }
                 }
             }
-            .stroke(Color.blue, lineWidth: 2)
+            .stroke(lineColor(), lineWidth: 2)
         }
     }
     
-    func getY(entry: StatisticsData, geometry: GeometryProxy) -> CGFloat {
-        let maxDataValue = CGFloat(data.max(by: { $0[keyPath: fieldKey] < $1[keyPath: fieldKey] })?[keyPath: fieldKey] ?? 1)
+    func getY(entry: StatisticsData, geometry: GeometryProxy, fk: KeyPath<StatisticsData, Int>) -> CGFloat {
+        let maxDataValue = CGFloat(data.max(by: { $0[keyPath: fk] < $1[keyPath: fk] })?[keyPath: fk] ?? 1)
         let scale = geometry.size.height / maxDataValue
-        return CGFloat(entry[keyPath: fieldKey]) * scale
+        return CGFloat(entry[keyPath: fk]) * scale
     }
+    
+    private func lineColor() -> Color {
+        LineChart.color = LineChart.color.shuffled()
+        if let lastColor = LineChart.color.popLast() {
+            return lastColor
+        } else {
+            return .blue
+        }
+    }
+    
 }
