@@ -193,13 +193,21 @@ struct LineChart: View {
 //    let fieldKey: KeyPath<StatisticsData, Int>
     let fieldKeys: [KeyPath<StatisticsData, Int>]
     
-    static var color: [Color] = [.blue, .cyan, .green, .indigo, .mint, .orange, .pink, .purple, .red, .teal, .yellow, .gray]
+    static var color: [Color] = [.blue, .cyan, .green, .indigo, .mint, .orange, .pink, .purple, .red, .teal, .yellow, .gray].shuffled()
     
     var body: some View {
-        ZStack {
-            ForEach(fieldKeys, id: \.self) { keyPath in
-                drawLineChart(fk: keyPath)
+        VStack {
+            ZStack {
+                ForEach(fieldKeys, id: \.self) { keyPath in
+                    drawLineChart(fk: keyPath)
+                }
             }
+            HStack {
+                ForEach(fieldKeys, id: \.self) { keyPath in
+                    drawLegend(fk: keyPath)
+                }
+            }
+            .padding(.top, 10)
         }
     }
     
@@ -216,7 +224,7 @@ struct LineChart: View {
                     }
                 }
             }
-            .stroke(lineColor(), lineWidth: 2)
+            .stroke(lineColor(fieldKey: fk), lineWidth: 2)
         }
     }
     
@@ -226,13 +234,29 @@ struct LineChart: View {
         return CGFloat(entry[keyPath: fk]) * scale
     }
     
-    private func lineColor() -> Color {
-        LineChart.color = LineChart.color.shuffled()
-        if let lastColor = LineChart.color.popLast() {
-            return lastColor
-        } else {
-            return .blue
+    private func drawLegend(fk: KeyPath<StatisticsData, Int>) -> some View {
+        HStack {
+            RoundedRectangle(cornerRadius: 4)
+                .frame(width: 20, height: 20)
+                .foregroundColor(lineColor(fieldKey: fk))
+            Text(fk == \StatisticsData.tank ? "Tanks" :
+                    fk == \StatisticsData.APC ? "APC" :
+                    fk == \StatisticsData.field_artillery ? "Arty" :
+                    fk == \StatisticsData.aircraft ? "Planes" : "")
         }
+//        .padding(.trailing)
+    }
+    
+    private func lineColor(fieldKey: KeyPath<StatisticsData, Int>) -> Color {
+        let index = fieldKeys.firstIndex(of: fieldKey) ?? 0
+//        LineChart.color = LineChart.color.shuffled()
+//        if let lastColor = LineChart.color.popLast() {
+//            return lastColor
+//        } else {
+//            return .blue
+//        }
+//        LineChart.color
+        return LineChart.color.indices.contains(index) ? LineChart.color[index] : .blue
     }
     
 }
