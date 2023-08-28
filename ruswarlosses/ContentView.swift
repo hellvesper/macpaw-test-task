@@ -123,22 +123,6 @@ struct ContentView: View {
                         .padding()
                 }
             }
-//            } else if !statisticsData.isEmpty {
-//                            BarChart(data: statisticsData)
-//                                .frame(height: 300)
-//                                .padding()
-//            }
-//            } else {
-//                List(statisticsData) { data in
-//                    Text("Date: \(data.date)")
-//                    Text("Tank: \(data.tank)")
-//                    Text("APC: \(data.APC)")
-//                    Text("Aircrafts: \(data.aircraft)")
-//                    Text("field_artillery: \(data.field_artillery)")
-//                    Text("military auto: \(data.military_auto)")
-//                    Text("fuel tanks: \(data.fuel_tank)")
-//                }
-//            }
         }
     }
     
@@ -171,6 +155,7 @@ struct ContentView: View {
     }
 }
 
+
 struct BarChart: View {
     let data: [StatisticsData]
     
@@ -202,32 +187,6 @@ struct BarChart: View {
     }
 }
 
-//struct LineChart: View {
-//    let data: [StatisticsData]
-//
-//    var body: some View {
-//        GeometryReader { geometry in
-//            Path { path in
-//                for (index, entry) in data.enumerated() {
-//                    let x = geometry.size.width / CGFloat(data.count - 1) * CGFloat(index)
-//                    let y = geometry.size.height - self.getY(entry: entry, geometry: geometry)
-//                    if index == 0 {
-//                        path.move(to: CGPoint(x: x, y: y))
-//                    } else {
-//                        path.addLine(to: CGPoint(x: x, y: y))
-//                    }
-//                }
-//            }
-//            .stroke(Color.blue, lineWidth: 2)
-//        }
-//    }
-//
-//    func getY(entry: StatisticsData, geometry: GeometryProxy) -> CGFloat {
-//        let maxDataValue = CGFloat(data.max(by: { $0.tank < $1.tank })?.tank ?? 1)
-//        let scale = geometry.size.height / maxDataValue
-//        return CGFloat(entry.tank) * scale
-//    }
-//}
 
 struct LineChart: View {
     let data: [StatisticsData]
@@ -241,8 +200,6 @@ struct LineChart: View {
             ForEach(fieldKeys, id: \.self) { keyPath in
                 drawLineChart(fk: keyPath)
             }
-//            drawLineChart(fk: fieldKey)
-//            drawLineChart(fk: fieldKey)
         }
     }
     
