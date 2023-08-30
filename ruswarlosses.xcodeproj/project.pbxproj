@@ -15,6 +15,8 @@
 		384B03AE2A97A076002C0EAA /* ruswarlossesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384B03AD2A97A076002C0EAA /* ruswarlossesUITests.swift */; };
 		384B03B02A97A076002C0EAA /* ruswarlossesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384B03AF2A97A076002C0EAA /* ruswarlossesUITestsLaunchTests.swift */; };
 		38C13F0E2A9C4D150000DA58 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 38C13F0D2A9C4D150000DA58 /* LICENSE */; };
+		38C13F102A9D4B510000DA58 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C13F0F2A9D4B510000DA58 /* Protocols.swift */; };
+		38C13F122A9D4CB20000DA58 /* Charts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C13F112A9D4CB20000DA58 /* Charts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		384B03AD2A97A076002C0EAA /* ruswarlossesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ruswarlossesUITests.swift; sourceTree = "<group>"; };
 		384B03AF2A97A076002C0EAA /* ruswarlossesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ruswarlossesUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		38C13F0D2A9C4D150000DA58 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
+		38C13F0F2A9D4B510000DA58 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		38C13F112A9D4CB20000DA58 /* Charts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Charts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +103,12 @@
 			children = (
 				384B03912A97A072002C0EAA /* ruswarlossesApp.swift */,
 				384B03932A97A072002C0EAA /* ContentView.swift */,
+				38C13F112A9D4CB20000DA58 /* Charts.swift */,
 				38C13F0D2A9C4D150000DA58 /* LICENSE */,
 				384B03952A97A075002C0EAA /* Assets.xcassets */,
 				384B03972A97A075002C0EAA /* ruswarlosses.entitlements */,
 				384B03982A97A075002C0EAA /* Preview Content */,
+				38C13F0F2A9D4B510000DA58 /* Protocols.swift */,
 			);
 			path = ruswarlosses;
 			sourceTree = "<group>";
@@ -263,6 +269,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38C13F122A9D4CB20000DA58 /* Charts.swift in Sources */,
+				38C13F102A9D4B510000DA58 /* Protocols.swift in Sources */,
 				384B03942A97A072002C0EAA /* ContentView.swift in Sources */,
 				384B03922A97A072002C0EAA /* ruswarlossesApp.swift in Sources */,
 			);

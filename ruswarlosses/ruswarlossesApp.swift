@@ -11,7 +11,8 @@ import SwiftUI
 struct ruswarlossesApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            ContentView()
+            SplitViewContent()
                 .frame(minWidth: 800, minHeight: 600)
         }
     }
