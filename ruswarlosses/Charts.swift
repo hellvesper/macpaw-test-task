@@ -40,8 +40,8 @@ struct BarChart: View {
 
 
 struct LineChart: View {
-    let data: [StatisticsData]
-    let fieldKeys: [KeyPath<StatisticsData, Int>]
+    let data: [any StatsData]
+    let fieldKeys: [KeyPath<any StatsData, Int>]
     
     static var color: [Color] = [.blue, .cyan, .green, .indigo, .mint, .orange, .pink, .purple, .red, .teal, .yellow, .gray].shuffled()
     
@@ -54,14 +54,14 @@ struct LineChart: View {
             }
             HStack {
                 ForEach(fieldKeys, id: \.self) { keyPath in
-                    drawLegend(fk: keyPath)
+//                    drawLegend(fk: keyPath)
                 }
             }
             .padding(.top, 10)
         }
     }
     
-    private func drawLineChart(fk: KeyPath<StatisticsData, Int>) -> some View {
+    private func drawLineChart(fk: KeyPath<any StatsData, Int>) -> some View {
         GeometryReader { geometry in
             Path { path in
                 for (index, entry) in data.enumerated() {
@@ -78,26 +78,26 @@ struct LineChart: View {
         }
     }
     
-    func getY(entry: StatisticsData, geometry: GeometryProxy, fk: KeyPath<StatisticsData, Int>) -> CGFloat {
+    func getY(entry: any StatsData, geometry: GeometryProxy, fk: KeyPath<any StatsData, Int>) -> CGFloat {
         let maxDataValue = CGFloat(data.max(by: { $0[keyPath: fk] < $1[keyPath: fk] })?[keyPath: fk] ?? 1)
         let scale = geometry.size.height / maxDataValue
         return CGFloat(entry[keyPath: fk]) * scale
     }
     
-    private func drawLegend(fk: KeyPath<StatisticsData, Int>) -> some View {
-        HStack {
-            RoundedRectangle(cornerRadius: 4)
-                .frame(width: 20, height: 20)
-                .foregroundColor(lineColor(fieldKey: fk))
-            Text(fk == \StatisticsData.tank ? "Tanks" :
-                    fk == \StatisticsData.APC ? "APC" :
-                    fk == \StatisticsData.field_artillery ? "Arty" :
-                    fk == \StatisticsData.aircraft ? "Planes" : "")
-        }
-//        .padding(.trailing)
-    }
+//    private func drawLegend(fk: KeyPath<StatisticsData, Int>) -> some View {
+//        HStack {
+//            RoundedRectangle(cornerRadius: 4)
+//                .frame(width: 20, height: 20)
+//                .foregroundColor(lineColor(fieldKey: fk))
+//            Text(fk == \StatisticsData.tank ? "Tanks" :
+//                    fk == \StatisticsData.APC ? "APC" :
+//                    fk == \StatisticsData.field_artillery ? "Arty" :
+//                    fk == \StatisticsData.aircraft ? "Planes" : "")
+//        }
+////        .padding(.trailing)
+//    }
     
-    private func lineColor(fieldKey: KeyPath<StatisticsData, Int>) -> Color {
+    private func lineColor(fieldKey: KeyPath<any StatsData, Int>) -> Color {
         let index = fieldKeys.firstIndex(of: fieldKey) ?? 0
         return LineChart.color.indices.contains(index) ? LineChart.color[index] : .blue
     }

@@ -10,6 +10,11 @@ import Foundation
 
 protocol StatsData: Codable, Identifiable {}
 
+struct Dummy: StatsData {
+    var id: UUID = UUID()
+    let dummy: Int
+}
+
 struct StatisticsData: StatsData {
     let id: UUID = UUID()
     
