@@ -16,6 +16,8 @@
 		384B03AE2A97A076002C0EAA /* ruswarlossesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384B03AD2A97A076002C0EAA /* ruswarlossesUITests.swift */; };
 		384B03B02A97A076002C0EAA /* ruswarlossesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384B03AF2A97A076002C0EAA /* ruswarlossesUITestsLaunchTests.swift */; };
 		38BEC8162AA2528F00BDF0CD /* EquipmentLosses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BEC8152AA2528F00BDF0CD /* EquipmentLosses.swift */; };
+		38BEC8182AA2A5EC00BDF0CD /* LineChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BEC8172AA2A5EC00BDF0CD /* LineChart.swift */; };
+		38BEC81A2AA2AFEC00BDF0CD /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BEC8192AA2AFEC00BDF0CD /* Helper.swift */; };
 		38C13F0E2A9C4D150000DA58 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 38C13F0D2A9C4D150000DA58 /* LICENSE */; };
 		38C13F102A9D4B510000DA58 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C13F0F2A9D4B510000DA58 /* Protocols.swift */; };
 		38C13F122A9D4CB20000DA58 /* Charts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C13F112A9D4CB20000DA58 /* Charts.swift */; };
@@ -52,6 +54,8 @@
 		384B03AD2A97A076002C0EAA /* ruswarlossesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ruswarlossesUITests.swift; sourceTree = "<group>"; };
 		384B03AF2A97A076002C0EAA /* ruswarlossesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ruswarlossesUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		38BEC8152AA2528F00BDF0CD /* EquipmentLosses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentLosses.swift; sourceTree = "<group>"; };
+		38BEC8172AA2A5EC00BDF0CD /* LineChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChart.swift; sourceTree = "<group>"; };
+		38BEC8192AA2AFEC00BDF0CD /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		38C13F0D2A9C4D150000DA58 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
 		38C13F0F2A9D4B510000DA58 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		38C13F112A9D4CB20000DA58 /* Charts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Charts.swift; sourceTree = "<group>"; };
@@ -105,6 +109,8 @@
 		384B03902A97A072002C0EAA /* ruswarlosses */ = {
 			isa = PBXGroup;
 			children = (
+				38BEC8172AA2A5EC00BDF0CD /* LineChart.swift */,
+				38BEC8192AA2AFEC00BDF0CD /* Helper.swift */,
 				384B03912A97A072002C0EAA /* ruswarlossesApp.swift */,
 				384B03932A97A072002C0EAA /* ContentView.swift */,
 				38BEC8152AA2528F00BDF0CD /* EquipmentLosses.swift */,
@@ -279,8 +285,10 @@
 				38BEC8162AA2528F00BDF0CD /* EquipmentLosses.swift in Sources */,
 				38C13F122A9D4CB20000DA58 /* Charts.swift in Sources */,
 				38C13F102A9D4B510000DA58 /* Protocols.swift in Sources */,
+				38BEC8182AA2A5EC00BDF0CD /* LineChart.swift in Sources */,
 				384B03942A97A072002C0EAA /* ContentView.swift in Sources */,
 				384B03922A97A072002C0EAA /* ruswarlossesApp.swift in Sources */,
+				38BEC81A2AA2AFEC00BDF0CD /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
